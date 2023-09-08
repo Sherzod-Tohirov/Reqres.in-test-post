@@ -1,0 +1,154 @@
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.site-header__wrapper {
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.site-header__btn-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header__btn {
+    min-width: 200px;
+}
+.header__list {
+ position: absolute;
+ top: 45px;
+ display: none;
+ flex-direction: column;
+ align-items: flex-start;
+ width: 100%;
+ margin-top: 0;
+ margin-bottom: 0;
+ padding-left: 0;
+ background-color: white;
+ border-radius: 5px;
+ list-style: none;
+}
+
+.header__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 8px 0 8px;
+}
+
+
+.header__item:not(:last-child) {
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+
+
+.header__logout-btn {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    transition: color 0.4s ease;
+}
+
+.header__item:hover .header__logout-btn {
+    color: #ff0000; 
+}
+
+.users {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.users__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.users__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #212529;
+    cursor: pointer;
+    transition: opacity 0.4s ease;
+}
+
+
+.users__item:hover {
+   opacity: 0.8;
+}
+
+.header__link {
+    color: #000; 
+    text-decoration-line: none;
+    transition: color 0.4s ease;
+}
+
+.header__link:hover {
+    color: orange;
+}
+
+.users__img {
+    margin-bottom: 25px;
+}
+
+.users__details-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.users__desc {
+    font-size: 18px;
+}
+
+    
+.users__link {
+    font-style: oblique;
+    color: #fdbf07;
+    text-decoration-line: none;
+    transition: color 0.4s ease;
+}
+
+.users__link:hover {
+    color: gray;
+}
+
+.appear {
+    display: flex;
+}
+
+.login {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.login__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__form {
+    max-width: 400px;
+    width: 100%;
+}
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="bg-secondary">
+<header class="site-header bg-dark text-white p-3">
+ <div class="container">
+    <div class="site-header__wrapper d-flex align-items-center justify-content-between">
+        <a class="logo text-white text-decoration-none fs-5" href="./index.html">
+            Users<span class="text-warning">List.</span>
+        </a>
+        <div class="site-header__btn-wrapper">
+           
+        </div>
+    </div>
+ </div>
+</header>
+<main class="site-main">
+<section class="login">
+<div class="container">
+    <div class="login__wrapper">
+        <h1 class="login__title text-warning text-center" title="Login">Login</h1>
+        <form class="login__form js-login-form" method="POST" autocomplete="off">
+            <div class="form-group mb-3">
+                <label class="text-warning" for="email">Email</label>
+                <input id="email" class="form-control js-login-email" type="email" name="user_email" placeholder="john.doe@mail.ru">
+                <small class="text text-warning js-error-email mt-2"></small>
+            </div>
+            <div class="form-group mb-4">
+                <label class="text-warning" for="password">Password</label>
+                <input id="password" class="form-control js-login-password" type="password" name="user_password" placeholder="********">
+                <small class="text text-warning js-error-password mt-2"></small>
+            </div>
+            <button class="btn btn-warning w-100" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+</section>
+</main>
+<script src="./js/login.js"></script>
+</body>
+</html>

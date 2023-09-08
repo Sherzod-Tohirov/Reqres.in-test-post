@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reqres.in(Users)</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body class="bg-secondary">
+    <header class="site-header bg-dark text-white p-3">
+      <div class="container">
+        <div class="site-header__wrapper d-flex align-items-center justify-content-between">
+          <a class="logo text-white text-decoration-none fs-5" href="./index.html"> Users <span class="text-warning">List.</span>
+          </a>
+          <div class="site-header__btn-wrapper js-header-btn-wrapper">
+            <template class="js-header-btn-temp">
+              <button class="header__btn js-header-btn btn btn-secondary text-white" type="button"> Profile </button>
+              <ul class="header__list js-header-list list-group-flush">
+                <li class="header__item">
+                  <button class="header__logout-btn js-logout-btn">Logout</button>
+                </li>
+              </ul>
+            </template>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="site-main">
+      <section class="users">
+        <h1 class="visually-hidden">Test Post in Reqres.in with Fetch</h1>
+        <div class="container">
+          <div class="users__wrapper">
+            <ul class="users__list js-list">
+              <template class="js-user-item-temp">
+                <li class="users__item shadow">
+                  <img class="users__img rounded-circle" src="" width="80" height="80" alt="">
+                  <div class="users__details-wrapper">
+                    <p class="users__desc user-name text-warning">John Doe</p>
+                    <p class="users__desc">
+                      <a class="users__link user-email" href=""></a>
+                    </p>
+                  </div>
+                </li>
+              </template>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
