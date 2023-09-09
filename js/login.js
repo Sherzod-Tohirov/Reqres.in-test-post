@@ -61,8 +61,15 @@ async function postUserData(url, email, password) {
         headers: {
             "Content-Type": "application/json; charset=UTF-8"
         }
-    })
+    });
 
+    if(res.status >= 400) {
+      elErrorPassword.textContent = 'Email or Password is incorrect !';
+      elErrorPassword.classList.add('text-center', 'd-block');
+    }else {
+      elErrorPassword.textContent = '';
+      elErrorPassword.classList.remove('text-center', 'd-block');
+    }
 
     let data = await res.json();
     
