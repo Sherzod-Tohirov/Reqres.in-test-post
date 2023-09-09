@@ -75,6 +75,7 @@ async function postUserData(url, email, password) {
     
     if(data.token) {
         sessionStorage.setItem('token', data.token);
+        sessionStorage.setItem('email', email);
         window.location.href = './index.html';
     }
    }catch(err) {

@@ -48,7 +48,19 @@ function renderUsers(data, list) {
     });
 
     list.appendChild(fragment);
+
     
+    if(sessionStorage.getItem('email')) {
+        let email = sessionStorage.getItem('email');
+        let img = document.querySelector('.js-user-img');
+        let foundUser = data.find(item => item.email === email);
+        img.src = foundUser.avatar;
+        img.alt = `${foundUser.first_name} ${foundUser.last_name}`;
+        let span = document.createElement('span');
+        span.textContent = `${foundUser.first_name} ${foundUser.last_name}`;
+        elHeaderBtn.appendChild(span);
+    }
+        
 }
 
 
@@ -61,3 +73,4 @@ async function getUsers(url) {
         console.log(err);
     }
 }
+
